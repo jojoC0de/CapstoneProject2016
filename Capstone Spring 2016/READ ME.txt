@@ -1,0 +1,23 @@
+!! In order for this game to run properly, do not move or edit any of the files !!
+
+In order to run this game, you must have installed;
+Python 2.7(.11): https://www.python.org/downloads/
+	Click on download 2.7.#
+PyGame 1.9.1: http://www.pygame.org/download.shtml
+	Click on pygame
+
+How to start the game:
+Open example.py or game.py in IDLE
+Run the python file and the game should start up
+
+Game freezing solution:
+There is a known bug where if you go to a different window while the game is running,
+and you try to battle, when the animations are run,the game will freeze, but then usually come back.
+The way to fix this is to exit from the game and start it up again.
+
+Options explained:
+Turn animations on/off: Turns the animations used for the game on or off
+Change update time: Switches the time in which the AI is updated (before or after the AI chooses a move)
+# Iteration: Change the AI type. The earlier the iteration, the worse the AI tends to perform. Best iterations are 4th and 6th
+Random AI: Change the AI to choose moves randomly.
+Return to Title Screen: Takes you back to the Title screen
