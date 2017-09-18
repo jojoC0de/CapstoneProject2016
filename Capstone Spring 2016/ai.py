@@ -130,9 +130,7 @@ def sixth_iteration(move_prob, frequencies, prev_moves):
 ## and returns the one that has the highest probability of occurence
 def parse_data(move_prob, prev_moves, frequencies):
    move = 20
-   temp = [prev_moves[len(prev_moves)-5],prev_moves[len(prev_moves)-6],prev_moves[len(prev_moves)-5],prev_moves[len(prev_moves)-4],
-           prev_moves[len(prev_moves)-3],prev_moves[len(prev_moves)-2],
-           prev_moves[len(prev_moves)-1]]
+   temp = prev_moves[len(prev_moves)-7: len(prev_moves)]
    discount = 0.5
    weight_new = 0.6
    weight_old = 0.4
@@ -343,7 +341,7 @@ def get_max(move_prob):
 
 ## Used in the Fourth Iteration
 ## Funtion that parses  the move probability and returns a choice
-## based on probabilities of the 
+## based on probability of occurrence 
 def get_move(move_prob):
    max_list = get_max(move_prob)
    #print max_list
@@ -359,7 +357,7 @@ def get_move(move_prob):
    return max_index + 20
 
 ## Used in the Sixth Iteration
-## Create a randomly generated set of moves to be used in the case
+## Create a pseudo-randomly generated set of moves to be used in the case
 ## that the sixth iteration is being used so it can still make an
 ## "informed" decision
 def create_first_set(move_prob):
